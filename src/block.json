@@ -1,0 +1,114 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "datafieldblock/data",
+	"version": "0.1.0",
+	"title": "Data",
+	"description": "Meta field or Taxonomy terms list or WC Attributes list",
+	"category": "theme",
+	"attributes": {
+		"fieldType": {
+			"type": "string"
+		},
+		"metaType": {
+			"type": "string",
+			"default": "customField"
+		},
+		"field": {
+			"type": "string"
+		},
+		"term": {
+			"type": "string"
+		},
+		"attributeId": {
+			"type": "integer"
+		},
+		"magicSuffix": {
+			"type": "string"
+		},
+		"title": {
+			"type": "string"
+		},
+		"prefix": {
+			"type": "string"
+		},
+		"suffix": {
+			"type": "string"
+		},
+		"textAlign": {
+			"type": "string"
+		},
+		"tagName": {
+			"type": "string",
+			"default": "span"
+		},
+		"displayLayout": {
+			"type": "string",
+			"default": ""
+		},
+		"showOutline": {
+			"type": "boolean",
+			"default": false
+		},
+		"counter": {
+			"type": "number",
+			"default": 0
+		},
+		"separator": {
+			"type": "string",
+			"default": ", "
+		},
+		"lastUpdate": {
+			"type": "number",
+			"default": 0
+		}
+	},
+	"supports": {
+		"html": false,
+		"align": true,
+		"customClassName": true,
+		"lock": true,
+		"color": {
+			"text": true,
+			"background": true,
+			"gradients": true,
+			"link": true
+		},
+		"spacing": {
+			"margin": true,
+			"padding": true
+		},
+		"__experimentalBorder": {
+			"color": true,
+			"radius": true,
+			"style": true,
+			"width": true,
+			"__experimentalDefaultControls": {
+				"color": true,
+				"radius": true,
+				"style": true,
+				"width": true
+			}
+		},
+		"typography": {
+			"fontSize": true,
+			"lineHeight": true,
+			"__experimentalFontStyle": true,
+			"__experimentalFontWeight": true,
+			"__experimentalLetterSpacing": true,
+			"__experimentalTextTransform": true,
+			"__experimentalDefaultControls": {
+				"fontSize": true
+			}
+		}
+	},
+	"usesContext": [
+		"postId",
+		"postType"
+	],
+	"icon": "database",
+	"textdomain": "datafieldblock",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
